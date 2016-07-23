@@ -1,0 +1,16 @@
+*Style guide for Salmon Cookie Stand*
+
+##Colors##
+Body background: lightgray
+Header h3: salmon
+Main h3: darkblue
+Main ul: brown
+
+##Fonts##
+Cookie stand title: Aref Ruqaa
+Individual store headings: Oswald
+Store data: helvetica
+
+##Links to CSS##
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Oswald">

@@ -11,9 +11,14 @@ main h3 {
 
 main ul {
   font-family: helvetica;
+  color: brown;
 }
 
 #logo {
   width: 30%;
 
+}
+
+body {
+  background-color: lightgray;
 }
