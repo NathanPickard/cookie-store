@@ -1,3 +1,4 @@
+//Store 1
 var pioneerSquare = {
   name: 'Pioneer Square',
   customerMin: 17,
@@ -41,7 +42,7 @@ var pioneerSquare = {
   }
 }
 
-// Create 'storeTwo' object
+//Store 2
 var portlandAirport = {
   name: 'Portland Airport',
   customerMin: 6,
@@ -85,7 +86,7 @@ var portlandAirport = {
   }
 }
 
-// Create 'storeThree' object
+//Store 3
 var washingtonSquare = {
   name: 'Washington Square',
   customerMin: 11,
@@ -129,7 +130,7 @@ var washingtonSquare = {
   }
 }
 
-// Create 'storeFour' object
+//Store 4
 var sellwood = {
   name: 'Sellwood',
   customerMin: 20,
@@ -173,7 +174,7 @@ var sellwood = {
   }
 }
 
-// Create 'storeFive' object
+//Store 5
 var pearlDistrict = {
   name: 'Pearl District',
   customerMin: 3,
