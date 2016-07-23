@@ -1,0 +1,19 @@
+header h2 {
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 40px;
+  color: salmon;
+}
+
+main h3 {
+    font-family: 'Oswald';
+    color: darkblue;
+}
+
+main ul {
+  font-family: helvetica;
+}
+
+#logo {
+  width: 30%;
+
+}
