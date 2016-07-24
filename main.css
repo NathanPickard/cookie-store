@@ -9,6 +9,12 @@ main h3 {
     color: darkblue;
 }
 
+main nav a {
+    font-family: 'Oswald';
+    color: darkblue;
+    display: block;
+}
+
 main ul {
   font-family: helvetica;
   color: brown;

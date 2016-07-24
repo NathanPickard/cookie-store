@@ -1,3 +1,17 @@
+var storeItems = ["Pioneer Square", "Portland Airport", "Washington Square", "Sellwood", "Pearl District"];
+
+function addStoreItems() {
+  var store = document.getElementById("stores");
+  for (var index = 0; index < storeItems.length; index++) {
+    var itemTextNode = document.createTextNode(storeItems[index]);
+    var storeItemNode = document.createElement("a");
+    storeItemNode.appendChild(itemTextNode);
+    store.appendChild(storeItemNode);
+  }
+}
+
+addStoreItems();
+
 //Store 1
 var pioneerSquare = {
   name: 'Pioneer Square',
@@ -41,6 +55,7 @@ var pioneerSquare = {
     sum.innerHTML += "<li>" + "Total: " + total + "</li>";
   }
 }
+
 
 //Store 2
 var portlandAirport = {
