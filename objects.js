@@ -1,5 +1,35 @@
 var storeItems = ["Pioneer Square", "Portland Airport", "Washington Square", "Sellwood", "Pearl District"];
 
+var Store = function (name, customerMin, customerMax, customerCookieAvg) {
+  this.name = name;
+  this.customerMin = customerMin;
+  this.customerMax = customerMax;
+  this.customerCookieAvg = customerCookieAvg;
+  this.addInfo = function () {
+    var storeRow = document.createElement("tr");
+    var nameCell = document.createElement("td");
+    nameCell.innerText = this.name;
+    storeRow.appendChild(nameCell);
+    var customerMinCell = document.createElement("td");
+    customerMinCell.innerText = this.customerMin;
+    storeRow.appendChild(customerMinCell);
+    var customerMaxCell = document.createElement("td");
+    customerMaxCell.innerText = this.customerMax;
+    storeRow.appendChild(customerMaxCell);
+    var customerCookieAvgCell = document.createElement("td");
+    customerCookieAvgCell.innerText = this.customerCookieAvg;
+    storeRow.appendChild(customerCookieAvgCell);
+
+    var table = document.getElementById("storeTable");
+
+
+    t
+  }
+
+}
+
+
+
 function addStoreItems() {
   var store = document.getElementById("stores");
   for (var index = 0; index < storeItems.length; index++) {
