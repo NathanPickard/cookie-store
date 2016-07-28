@@ -28,3 +28,19 @@ main ul {
 body {
   background-color: lightgray;
 }
+
+table {
+  background-color: mediumTurquoise;
+  padding: 25px;
+  border-radius: 25px;
+  margin: 22px;
+}
+
+td {
+  background-color: lightyellow;
+  border-color: lightbrown;
+}
+
+th {
+  background-color: darksalmon;
+}

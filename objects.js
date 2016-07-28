@@ -8,7 +8,7 @@ var SalmonCookieStore = function(storeName, storeId, customerMin, customerMax, c
 
   this.cookiesSoldEachHour = [];
   this.cookiesSoldEachDay = 0;
-  this.hourlyTimeSlot = ["10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM"];
+  this.hourlyTime = ["10:00 AM","11:00 AM","12:00 PM","1:00 PM","2:00 PM","3:00 PM","4:00 PM","5:00 PM"];
 
   this.generateRandom = function() {
     return Math.floor(Math.random() * (this.customerMax - this.customerMin)) + this.customerMin;
@@ -42,7 +42,7 @@ var SalmonCookieStore = function(storeName, storeId, customerMin, customerMax, c
     // Creates column headers
     var tableHeaderRow = document.createElement("tr");
     tableHeaderCell = document.createElement("th");
-    var tableHeaderData = document.createTextNode("Timeslot")
+    var tableHeaderData = document.createTextNode("Time")
     tableHeaderCell.appendChild(tableHeaderData);
     tableHeaderRow.appendChild(tableHeaderCell);
     tableHeaderCell = document.createElement("th");
@@ -54,7 +54,7 @@ var SalmonCookieStore = function(storeName, storeId, customerMin, customerMax, c
     for (var j = 0; j < this.cookiesSoldEachHour.length; j++) {
       var newCookieRow = document.createElement("tr");
       var timeCell = document.createElement("td");
-      var timeCellData = document.createTextNode(this.hourlyTimeSlot[j]);
+      var timeCellData = document.createTextNode(this.hourlyTime[j]);
       timeCell.appendChild(timeCellData);
       newCookieRow.appendChild(timeCell);
       var cookieCell = document.createElement("td");
@@ -66,7 +66,7 @@ var SalmonCookieStore = function(storeName, storeId, customerMin, customerMax, c
     }
     var totalRow = document.createElement("tr");
     var totalTextCell = document.createElement("td");
-    var totalTextCellData = document.createTextNode("Daily Sales");
+    var totalTextCellData = document.createTextNode("Daily Sales:");
     totalTextCell.appendChild(totalTextCellData);
     totalRow.appendChild(totalTextCell);
     var totalNumberCell = document.createElement("td");
