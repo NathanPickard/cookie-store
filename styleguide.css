@@ -1,0 +1,46 @@
+#pageTitle {
+  color: salmon;
+}
+
+#backgroundBody {
+  color: lightgray;
+}
+
+#tableBackground {
+  color: darkturquoise;
+}
+
+#tableData {
+  color: lightyellow;
+}
+
+#tableHeader {
+  color: coral;
+}
+
+#tableHeaderText {
+  color: white;
+}
+
+.colors {
+  background-color: black;
+  display: inline-block;
+  border-color: white;
+  border-style: dashed;
+  padding: 25px;
+}
+
+.topography{
+  border-style: solid;
+  display: inline-block;
+  border-color: black;
+}
+
+#pageTitleTP {
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 30px;
+}
+
+#tableHeadings {
+  font-family: 'Oswald';
+}

@@ -1,46 +1,28 @@
 header h2 {
-  font-family: 'Aref Ruqaa', serif;
-  font-size: 40px;
-  color: salmon;
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 40px;
+    color: salmon;
 }
-
-main h3 {
-    font-family: 'Oswald';
-    color: darkblue;
-}
-
-main nav a {
-    font-family: 'Oswald';
-    color: darkblue;
-    display: block;
-}
-
-main ul {
-  font-family: helvetica;
-  color: brown;
-}
-
 #logo {
-  width: 30%;
-
+    width: 25%;
 }
-
 body {
-  background-color: lightgray;
+    background-color: lightgray;
 }
-
 table {
-  background-color: mediumTurquoise;
-  padding: 25px;
-  border-radius: 25px;
-  margin: 22px;
+    background-color: darkTurquoise;
+    padding: 25px;
+    border-radius: 25px;
+    margin: 22px;
+    font-family: 'Oswald';
 }
-
 td {
-  background-color: lightyellow;
-  border-color: lightbrown;
+    background-color: lightyellow;
+    padding: 10px;
+    font-family: helvetica;
 }
-
 th {
-  background-color: darksalmon;
+    background-color: coral;
+    padding: 5px;
+    color: white;
 }
