@@ -1,25 +1,29 @@
 #pageTitle {
   color: salmon;
+  border-style: solid;
+  border-color: white;
 }
 
 #backgroundBody {
-  color: lightgray;
+  background-color: lightgray;
 }
 
 #tableBackground {
-  color: darkturquoise;
+  background-color: darkturquoise;
 }
 
 #tableData {
-  color: lightyellow;
+  background-color: lightyellow;
 }
 
 #tableHeader {
-  color: coral;
+  background-color: coral;
 }
 
 #tableHeaderText {
   color: white;
+  border-style: solid;
+  border-color: white;
 }
 
 .colors {
@@ -43,4 +47,8 @@
 
 #tableHeadings {
   font-family: 'Oswald';
+}
+
+#tableDataTP {
+  font-family: helvetica;
 }
