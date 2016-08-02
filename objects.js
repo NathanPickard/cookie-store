@@ -1,7 +1,6 @@
 
-var SalmonCookieStore = function(storeName, storeId, customerMin, customerMax, customerCookieAvg) {
+var SalmonCookieStore = function(storeName, customerMin, customerMax, customerCookieAvg) {
   this.storeName = storeName;
-  this.storeId = storeId;
   this.customerMin = customerMin;
   this.customerMax = customerMax;
   this.customerCookieAvg = customerCookieAvg;
@@ -28,10 +27,10 @@ var SalmonCookieStore = function(storeName, storeId, customerMin, customerMax, c
   this.addInfo = function() {
     var positionSS = document.getElementById("stores-section");
     var newTable = document.createElement("table");
-    newTable.id = this.storeId;
+    newTable.id = this.storeName;
     positionSS.appendChild(newTable);
 
-    var table = document.getElementById(this.storeId);
+    var table = document.getElementById(this.storeName);
     var tableHeader = document.createElement("tr");
     var tableHeaderCell = document.createElement("th");
     tableHeaderCell.setAttribute("colspan", "2");
@@ -78,11 +77,11 @@ var SalmonCookieStore = function(storeName, storeId, customerMin, customerMax, c
 };
 
 var cookieStores = [
-  new SalmonCookieStore("Pioneer Square", "PS", 17, 88, 5.2),
-  new SalmonCookieStore("Portland Airport", "PA", 6, 24, 1.2),
-  new SalmonCookieStore("Washington Square", "WS", 11, 38, 1.9),
-  new SalmonCookieStore("Sellwood", "SW", 20, 48, 3.3),
-  new SalmonCookieStore("Pearl District", "PD", 3, 24, 2.6),
+  new SalmonCookieStore("Pioneer Square", 17, 88, 5.2),
+  new SalmonCookieStore("Portland Airport", 6, 24, 1.2),
+  new SalmonCookieStore("Washington Square", 11, 38, 1.9),
+  new SalmonCookieStore("Sellwood", 20, 48, 3.3),
+  new SalmonCookieStore("Pearl District", 3, 24, 2.6),
 ];
 
 // Loop through the 'cookieStores' array to call functions
@@ -92,4 +91,12 @@ for (var index = 0; index < cookieStores.length; index++) {
     currentStore.cookiesPerHour();
     currentStore.dailyCookies();
     currentStore.addInfo();
+};
+
+function addNewStore(formToUse) {
+  var userSubmitted = new SalmonCookieStore(formToUse.store.value, parseInt(formToUse.minCustomer.value), parseInt(formToUse.maxCustomer.value), parseInt(formToUse.avgCookiesSold.value));
+  userSubmitted.generateRandom();
+  userSubmitted.cookiesPerHour();
+  userSubmitted.dailyCookies();
+  userSubmitted.addInfo();
 };
