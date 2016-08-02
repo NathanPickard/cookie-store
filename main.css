@@ -26,3 +26,9 @@ th {
     padding: 5px;
     color: white;
 }
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  margin: 10px;
+}
